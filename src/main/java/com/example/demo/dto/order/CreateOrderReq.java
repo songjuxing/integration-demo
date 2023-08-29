@@ -14,6 +14,10 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * @author songjuxing
+ */
+
 @Integration(api = "createOrder",
     service = {
         @Rpc(name = "testService1",
@@ -78,7 +82,7 @@ public class CreateOrderReq extends BaseRequest {
 
     public void genOutParam(TestService1RespDto dto) {
         if (!StringUtils.isNotBlank(dto.getMchName())) {
-            throw new CommonException(ResultCode.UNKWON_EXP);
+            throw new CommonException(ResultCode.UNKNOWN_EXP);
         }
     }
 

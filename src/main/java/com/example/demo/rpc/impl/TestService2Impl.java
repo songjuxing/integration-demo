@@ -5,7 +5,9 @@ import com.example.demo.rpc.TestService2;
 import com.example.demo.rpc.dto.TestService2ReqDto;
 import com.example.demo.rpc.dto.TestService2RespDto;
 import org.springframework.stereotype.Service;
-
+/**
+ * @author songjuxing
+ */
 @Service("testService2")
 public class TestService2Impl implements TestService2 {
     @Override

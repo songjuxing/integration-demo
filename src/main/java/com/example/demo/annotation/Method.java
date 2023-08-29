@@ -3,7 +3,9 @@ package com.example.demo.annotation;
 import com.example.demo.dto.integration.IntegrationDto;
 
 import java.lang.annotation.*;
-
+/**
+ * @author songjuxing
+ */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.ANNOTATION_TYPE})

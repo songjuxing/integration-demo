@@ -1,7 +1,9 @@
 package com.example.demo.rpc.dto;
 
 import com.example.demo.dto.common.BaseRequest;
-
+/**
+ * @author songjuxing
+ */
 public class TestService1ReqDto extends BaseRequest {
 
     private String mchId;

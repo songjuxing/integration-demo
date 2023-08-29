@@ -11,7 +11,9 @@ import org.springframework.stereotype.Service;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-
+/**
+ * @author songjuxing
+ */
 @Service("rpcManager")
 public class RpcManagerImpl implements ApplicationContextAware, RpcManager {
 

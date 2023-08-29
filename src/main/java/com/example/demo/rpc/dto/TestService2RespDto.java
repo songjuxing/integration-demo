@@ -1,7 +1,9 @@
 package com.example.demo.rpc.dto;
 
 import com.example.demo.dto.common.BaseResponse;
-
+/**
+ * @author songjuxing
+ */
 public class TestService2RespDto extends BaseResponse {
 
     private String tradeNo;

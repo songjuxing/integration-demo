@@ -1,11 +1,20 @@
 package com.example.demo.dto.common;
 
+/**
+ * @author songjuxing
+ */
+
 public enum ResultCode {
 
+    /**
+     * 成功
+     */
     SUCCESS("000000", "成功"),
 
-
-    UNKWON_EXP("999999", "成功"),
+    /**
+     * 未知异常
+     */
+    UNKNOWN_EXP("999999", "未知异常"),
     ;
 
     private String code;

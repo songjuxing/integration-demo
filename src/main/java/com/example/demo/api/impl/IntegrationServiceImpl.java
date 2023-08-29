@@ -10,7 +10,9 @@ import com.example.demo.service.IntegrationManager;
 import org.apache.dubbo.config.annotation.DubboService;
 
 import javax.annotation.Resource;
-
+/**
+ * @author songjuxing
+ */
 @DubboService(group = "${dubbo.provider.group}", version = "${dubbo.provider.verion}")
 public class IntegrationServiceImpl implements IntegrationService {
 
@@ -28,7 +30,7 @@ public class IntegrationServiceImpl implements IntegrationService {
         try {
             return Result.createBySuccess(integrationManager.execute(req).getFinalRes());
         } catch (Exception e) {
-            return Result.createByError(new CommonException(ResultCode.UNKWON_EXP));
+            return Result.createByError(new CommonException(ResultCode.UNKNOWN_EXP));
         }
     }
 }

@@ -5,7 +5,9 @@ import com.example.demo.rpc.TestService1;
 import com.example.demo.rpc.dto.TestService1ReqDto;
 import com.example.demo.rpc.dto.TestService1RespDto;
 import org.springframework.stereotype.Service;
-
+/**
+ * @author songjuxing
+ */
 @Service("testService1")
 public class TestService1Impl implements TestService1 {
 

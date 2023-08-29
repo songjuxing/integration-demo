@@ -3,7 +3,9 @@ package com.example.demo.dto.common;
 import com.example.demo.dto.exception.CommonException;
 
 import java.io.Serializable;
-
+/**
+ * @author songjuxing
+ */
 public class Result<T extends BaseResponse> implements Serializable {
 
     private boolean success;

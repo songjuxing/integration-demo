@@ -1,7 +1,9 @@
 package com.example.demo.dto.exception;
 
 import com.example.demo.dto.common.ResultCode;
-
+/**
+ * @author songjuxing
+ */
 public class CommonException extends RuntimeException {
 
     private String code;

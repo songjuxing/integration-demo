@@ -10,10 +10,16 @@ import java.lang.reflect.Method;
  */
 public interface Integratable {
 
-    final static String GEN_INPUT_METHOD_NAME = "genInParam";
+    String GEN_INPUT_METHOD_NAME = "genInParam";
 
-    final static String GEN_OUTPUT_METHOD_NAME = "genOutParam";
+    String GEN_OUTPUT_METHOD_NAME = "genOutParam";
 
+    /**
+     * 获取入参
+     * @param clazz Class<T>
+     * @param <T> IntegrationDto
+     * @return IntegrationDto
+     */
     @SuppressWarnings("unchecked")
     public default <T extends IntegrationDto> T genInParam(Class<T> clazz) {
         T t = null;
@@ -32,6 +38,12 @@ public interface Integratable {
         return t;
     }
 
+    /**
+     * 获取出参
+     * @param clazz Class<T>
+     * @param dto IntegrationDto
+     * @param <T> IntegrationDto
+     */
     default <T extends IntegrationDto> void genOutParam(Class<T> clazz, IntegrationDto dto) {
         try {
             Method genInParamMethod = this.getClass().getMethod(GEN_OUTPUT_METHOD_NAME, clazz);

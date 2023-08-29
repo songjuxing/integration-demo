@@ -12,7 +12,9 @@ import com.example.demo.service.RpcManager;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-
+/**
+ * @author songjuxing
+ */
 @Service("integrationManager")
 public class IntegrationManagerImpl implements IntegrationManager {
 
